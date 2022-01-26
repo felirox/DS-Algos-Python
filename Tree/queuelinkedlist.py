@@ -11,12 +11,7 @@ class LinkedList:
     def __init__(self):
         self.head = None
         self.tail = None
- 
-    # def __iter__(self):
-    #     cN = self.head
-    #     while cN:
-    #         yield cN
-    #         cN= cN.next
+
             
 class Queue:
     def __init__(self):

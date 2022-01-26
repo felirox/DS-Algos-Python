@@ -50,6 +50,25 @@ class BTclass:
             
             print(self.customList[i])
             
+    def delNode(self,value):
+        if self.lastUsedIndex ==0:
+            return "No element found"
+        else:
+            for i in range(1,self.lastUsedIndex):
+                if self.customList[i]==value:
+                    self.customList[i]= self.customList[self.lastUsedIndex]
+                    self.customList[self.lastUsedIndex]=None
+                    self.lastUsedIndex-=1
+                    return "Node is deleted"
+            return "No element found - Not deleted"
+        
+    def delEntireBT(self):
+        self.customList = None
+        return "List Deleted"
+                    
+                    
+        
+            
             
         
 BT = BTclass(10)
@@ -60,6 +79,8 @@ print(BT.insertNode("Tea"))
 print(BT.insertNode("Coffee"))
 print(BT.searchNode("Coldd"))
 BT.levelTrav()
-
+print(BT.delNode("Cold"))
+BT.delEntireBT()
+BT.levelTrav()
 
 
