@@ -219,5 +219,5 @@ def deletewholeBT(rootNode):
 
 
 deletewholeBT(newBT)
-print("Dell")
+print("Delll")
 levelOrder(newBT)
