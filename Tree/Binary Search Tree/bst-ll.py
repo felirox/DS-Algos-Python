@@ -5,3 +5,5 @@ class BSTNode():
         self.rightChild=None
 
 BST = BSTNode(None)
+
+
