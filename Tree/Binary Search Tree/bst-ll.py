@@ -87,7 +87,19 @@ def searchN(root,value):
     else:
         print("Not Found")
         return "Not Found"
-            
+   
+def minimumVal(Broot):         
+    current = Broot
+    while current.leftChild is not None:
+        current = current.leftChild
+    return current
+
+def deleteNode(Broot,val):
+    if Broot is None:
+        return Broot
+    if val<Broot.data:
+        
+        
               
             
 BST = BSTNode(None)
