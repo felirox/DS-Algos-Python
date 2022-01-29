@@ -65,8 +65,30 @@ def levelTrav(root):
             if roo.rightChild is not None:
                 cusQ.enqueue(roo.rightChild)
                 
-
-                
+def searchN(root,value):
+    if root.data == value:
+        print("FOund 1")
+        return "Found"
+    elif (value<root.data) and root.leftChild is not None:
+        if root.leftChild.data == value:
+            print("Found 2")
+            return "Found"
+        else:
+            searchN(root.leftChild,value)
+            #return ("It found")
+    elif (value>root.data) and (root.rightChild is not None):
+        if root.rightChild.data == value:
+            print("Found 3")
+            
+            return ("It found")
+        else:
+            searchN(root.rightChild,value)
+            #return ("It found")
+    else:
+        print("Not Found")
+        return "Not Found"
+            
+              
             
 BST = BSTNode(None)
 print(insert(BST,70))
@@ -78,19 +100,20 @@ print(insert(BST,43))
 print(insert(BST,67))
 print(insert(BST,234))
 
-print(BST.data)
-print(BST.leftChild.data)
+# print(BST.data)
+# print(BST.leftChild.data)
 
-print("\nPre:")
-preTrav(BST)
+# print("\nPre:")
+# preTrav(BST)
 
-print("\nIn:")
-inTrav(BST)
+# print("\nIn:")
+# inTrav(BST)
 
-print("\nPost:")
-postTrav(BST)
+# print("\nPost:")
+# postTrav(BST)
 
 print("\nLevel:")
 levelTrav(BST)
 
-
+print("****")
+print(searchN(BST,2))
