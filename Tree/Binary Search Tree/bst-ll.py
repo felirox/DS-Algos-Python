@@ -100,6 +100,7 @@ def deleteNode(Broot,val):
     if val<Broot.data:
         
         
+        
               
             
 BST = BSTNode(None)
