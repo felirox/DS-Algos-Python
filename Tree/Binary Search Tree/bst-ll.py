@@ -114,17 +114,17 @@ print(insert(BST,43))
 print(insert(BST,67))
 print(insert(BST,234))
 
-print(BST.data)
-print(BST.leftChild.data)
+# print(BST.data)
+# print(BST.leftChild.data)
 
-print("\nPre:")
-preTrav(BST)
+# print("\nPre:")
+# preTrav(BST)
 
-print("\nIn:")
-inTrav(BST)
+# print("\nIn:")
+# inTrav(BST)
 
-print("\nPost:")
-postTrav(BST)
+# print("\nPost:")
+# postTrav(BST)
 
 print("\nLevel:")
 levelTrav(BST)
