@@ -11,7 +11,7 @@ class Solution:
                 del dt[i]
             #print("del dt=",dt)
             for t in dt.keys():
-                print(t,dt[t],tp)
+                #print(t,dt[t],tp)
                 tp*=t**dt[t]
             #print(tp)
             op.append(tp)
