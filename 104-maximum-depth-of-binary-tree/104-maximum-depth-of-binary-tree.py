@@ -11,15 +11,12 @@ class Solution:
             return 
         global maxd
         maxd=max(maxd,md)
-        print(level.val,md)
         self.sloop(level.left,md+1)
         self.sloop(level.right,md+1)
         
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         global maxd
         maxd=0        
-        if root is None:
-            return 0
         self.sloop(root,1)
         return maxd
         
