@@ -5,6 +5,8 @@ class Solution:
         if tar==0:
             tp.append(cp)
             return
+        if len(cp)>150:
+            return
         for i in range(len(candy)):
             self.dfs(tar-candy[i],candy[i:],cp+[candy[i]],tp)
     
