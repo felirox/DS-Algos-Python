@@ -9,6 +9,6 @@ class Solution:
         else:
             op2=op2+[0]*(len(op1)-len(op2))
 
-        return 1 if op1>op2 else -1 if op2>op1 else 0
+        return (op1>op2)-(op2>op1)
 
             
