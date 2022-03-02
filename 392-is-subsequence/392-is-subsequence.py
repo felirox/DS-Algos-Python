@@ -10,9 +10,6 @@ class Solution:
                 op+=t[i]
                 s=s[1:]
             i+=1
-        print(op)
-        print(sbkp)
         if op==sbkp:
             return True
-        else:
-            return False
+        return False
