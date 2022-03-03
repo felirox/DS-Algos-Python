@@ -2,10 +2,13 @@ class Solution:
             
     def numberOfArithmeticSlices(self, nums: List[int]) -> int:
         count=0
-        listy=[0]*len(nums)
+        prev=0
+        curr=0
         for i in range(2,len(nums)):
             if nums[i-2]-nums[i-1]==nums[i-1]-nums[i]:
-                listy[i]=listy[i-1]+1
-            count+=listy[i]
+                curr=prev+1
+            count+=curr
+            prev=curr
+            curr=0
         return count
         
