@@ -15,11 +15,9 @@ class Solution:
             l.append(l2.val)
             l2=l2.next
         l.sort()
-        print(l)
         oplist=ListNode()
         lfin=oplist
         for i in l:
             lfin.next=ListNode(i)
             lfin=lfin.next
-            
         return oplist.next
