@@ -16,6 +16,10 @@ class Solution:
         for _ in range(km):
             p=l.pop()
             l.insert(0,p)
+        head.val=None
+        head.next=None
+        head=None
+        
         newll=ListNode(l.pop(0))
         travl=newll
         while l:
