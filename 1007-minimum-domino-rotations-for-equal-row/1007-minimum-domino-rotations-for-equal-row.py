@@ -2,8 +2,7 @@ class Solution:
     def minDominoRotations(self, tops: List[int], bottoms: List[int]) -> int:
         topchange=0
         bottomchange=0
-        tot=tops+bottoms
-        maxx=max(set(tot),key=tot.count)
+        maxx=max(set(tops+bottoms),key=(tops+bottoms).count)
         for i in range(len(tops)):
             if tops[i]==maxx and bottoms[i]==maxx:
                 continue                    
