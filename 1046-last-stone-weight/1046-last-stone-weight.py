@@ -7,7 +7,7 @@ class Solution:
             elif stones[-1]!=stones[-2]:
                 res=stones[-1]-stones[-2]
                 stones=stones[:-2]          
-                stones.append(res)
+                stones+=[res]
         if stones:
             return (stones[0])
         else:
