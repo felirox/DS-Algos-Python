@@ -16,7 +16,6 @@ class Solution:
                 root.left=iterr(root.left)
                 root.right=iterr(root.right)
                 return root
-        
         return iterr(root)
         
                 
