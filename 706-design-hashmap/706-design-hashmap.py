@@ -17,9 +17,6 @@ class MyHashMap:
     def get(self, key: int) -> int:
         for i in range(len(self.l)):
             if self.l[i]==key:
-                # t=self.l2[i]
-                # # self.l.remove(self.l[i])
-                # # del self.l2[i]
                 return self.l2[i]
         return -1
         
