@@ -1,11 +1,13 @@
 class Solution:
     def sortArrayByParity(self, nums: List[int]) -> List[int]:
-        e=[]
-        o=[]
-        for i in nums:
-            if i%2==0:
-                e.append(i)
+        e=0
+        o=len(nums)-1
+        while e<=o:
+            if nums[e]%2==0:
+                e+=1
             else:
-                o.append(i)
-        return e+o
+                nums[e],nums[o]=nums[o],nums[e]
+                o-=1
+        return nums
+            
         
