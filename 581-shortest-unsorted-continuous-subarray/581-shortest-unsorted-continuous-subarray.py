@@ -10,9 +10,8 @@ class Solution:
             end-=1
         if start>end:
             return 0
-        temp=nums[start:end+1]
-        minn=min(temp)
-        maxx=max(temp)
+        minn=min(nums[start:end+1])
+        maxx=max(nums[start:end+1])
         while start>0 and minn<nums[start-1]:
             start-=1
         while end<len(nums)-1 and maxx>nums[end+1]:
