@@ -9,8 +9,7 @@ class Solution:
         l=0
         r=len(nums)-1
         while l<r:
-            tot=nums[l]+nums[r]
-            if tot ==k:
+            if nums[l]+nums[r] ==k:
                 nums.pop(r)
                 nums.pop(l)
                 r-=2
@@ -19,5 +18,4 @@ class Solution:
                 r-=1
             else:
                 l+=1
-        
         return count
